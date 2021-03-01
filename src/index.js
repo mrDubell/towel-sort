@@ -6,21 +6,15 @@ if (!matrix || matrix.length === 0){
 	return [];
 }
 else{
-let newArr = [];
-	for(let i = 0; i < matrix.length; i++){
-		if (i % 2 !== 0){
-		newArr.push(matrix[i].reverse())
-		}
-		else(
-		newArr.push(matrix[i])
-		)
-	//return newArr;
-	}
-return newArr.flat()
-	
-}
-
-
-
-  //return matrix;
+    let newArr = [];
+        for(let i = 0; i < matrix.length; i++){
+            if (i % 2 !== 0){
+                newArr.push(matrix[i].reverse())
+                }
+            else(
+            newArr.push(matrix[i])
+            )
+        }
+    return newArr.flat();
+    }
 }
